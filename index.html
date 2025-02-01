@@ -31,6 +31,7 @@
               clifford: "#da373d",
               "pet-primary": "#FFF9F4",
               "pet-secondary": "#F9DF8A",
+              "pet-color": "#FFDC26",
             },
             fontFamily: {
               sora: ["Sora", "serif"],
@@ -43,7 +44,58 @@
   </head>
   <body class="font-sora">
     <!-- This is the Header Section -->
-    <header></header>
+    <header>
+        <!-- Navbar -->
+        <div class="bg-pet-primary">
+            <div class="navbar border md:border-0 max-w-[1536px] mx-auto flex justify-between p-0">
+                    <!-- Logo -->
+                    <div class="navbar-start">
+                        <div class="flex space-x-2 items-center">
+                            <img class="min-w-[47px] p-4" src="c1-assets/logo-header.png" alt="">
+                            <a class="hidden sm:block text-2xl">Browse<span class="text-pet-color">4</span>Pets</a>
+                            </div>
+                    </div>
+                    <!-- Options -->
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1 text-xl">
+                            <li><a>Find a pet</a></li>
+                            <li><a>Breeds</a></li>
+                            <li><a>Contact us</a></li>
+                            </ul>
+                    </div>
+                    <!-- Buttons -->
+                    <div class="navbar-end hidden lg:flex space-x-4">
+                        <i class="fa-regular fa-bell fa-lg cursor-pointer"></i>
+                        <i class="fa-solid fa-magnifying-glass fa-lg cursor-pointer"></i>
+                        <a class="btn btn-outline w-[117px] h-[45px] text-xl bg-none border border-pet-color">Login</a>
+                        <a class="btn w-[146px] h-[45px] text-xl bg-pet-color hover:bg-transparent hover:border-pet-color hover:text-pet-color">Register</a>
+                    </div>      
+                <!-- Dropdown -->
+                <div class="lg:hidden dropdown dropdown-end lg:absolute z-50">
+                    <!-- Dropdown Icon -->
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- Dropdown Content -->
+                    <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-1 w-52 p-2 shadow">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                        <li>
+                            <p><i class="fa-regular fa-bell"></i>Notification</p>
+                            <p><i class="fa-solid fa-magnifying-glass"></i>Search</p>
+                        </li>
+                        <li><a class="btn btn-outline w-[185px] h-[30px] text-lg bg-none border border-pet-color mt-2">Login</a></li>
+                        <li><a class="btn w-[185px] h-[30px] text-lg bg-pet-color mt-2">Register</a></li>
+                        </ul>
+                        </li>
+                    </div>
+                </div>
+         </div>
+          
+    </header>
     <!-- This is the Main Section -->
     <main></main>
     <!-- This is the Footer Section -->
